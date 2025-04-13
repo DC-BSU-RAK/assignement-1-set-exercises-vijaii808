@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    background: #004080;
+    color: white;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  h3 {
+    margin-top: 25px;
+    color: #004080;
+  }
+  
+  article {
+    margin-bottom: 20px;
+  }
+  
+  /* Code Styling */
+  pre {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+  
+  code {
+    font-family: 'Courier New', monospace;
+    color: #2a2a2a;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+    border-radius: 8px;
+  }
+  
