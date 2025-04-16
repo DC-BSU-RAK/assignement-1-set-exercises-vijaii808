@@ -1,67 +1,101 @@
-/* Fonts */
 body {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
     margin: 0;
-    padding: 0;
-    color: #000000;
-}
-
-h1, h2 {
-    font-family: Tahoma, sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-header {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #000;
+  }
+  
+  /* Header */
+  header {
     background-color: #17072b;
-    padding: 20px;
-}
-
-.header-container {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Tahoma, sans-serif;
+  }
+  
+  header h1 {
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Main Layout */
+  main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-main {
     padding: 20px;
-}
-
-.welcome {
-    margin-bottom: 40px;
-}
-
-.lineup .images {
-    display: flex;
-    gap: 20px;
+  }
+  
+  /* Welcome Section */
+  .welcome {
+    width: 65%;
+  }
+  
+  .welcome h2 {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .welcome img {
+    width: 100%;
     margin-top: 20px;
-}
-
-.lineup .images img {
-    width: 200px;
-    height: 200px;
+    border-radius: 5px;
+  }
+  
+  /* Line-up Sidebar */
+  .line-up {
+    width: 30%;
+    background-color: #172d67;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .line-up h2 {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .line-up ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .line-up .images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .line-up .images img {
+    width: 48%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border: 2px solid #000;
-}
-
-footer {
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
     background-color: #8c15e9;
-    color: #ffffff;
+    color: white;
     text-align: center;
-    padding: 15px;
-}
+    padding: 10px;
+    font-weight: 400;
+  }
+  

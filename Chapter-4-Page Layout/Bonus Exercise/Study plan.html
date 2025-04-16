@@ -4,14 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Study Planner</title>
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- Sidebar Navigation -->
   <aside class="sidebar">
     <h1>📘 Study Planner</h1>
     <nav>
       <ul>
+        <!-- Navigation menu items -->
         <li><a href="#">Overview</a></li>
         <li><a href="#">Weeks</a></li>
         <li><a href="#">Calendar</a></li>
@@ -20,20 +23,24 @@
     </nav>
   </aside>
 
-  <!-- Main Layout -->
+  <!-- Main Layout Container -->
   <div class="main-content">
-    <!-- Header -->
+
+    <!-- Page Header with title and button -->
     <header>
       <h2>Web Development Module</h2>
+      <!-- Button to add new task -->
       <button>Add Task</button>
     </header>
 
-    <!-- Two Column Layout -->
+    <!-- Two Column Layout Starts Here -->
     <main class="grid-layout">
-      <!-- Column 1: Task List -->
+
+      <!-- Column 1: Task List Section -->
       <section class="task-list">
         <h3>Tasks</h3>
         <ul>
+          <!-- List of tasks with checkboxes -->
           <li>✔ Intro to HTML</li>
           <li>✔ Semantic Tags</li>
           <li>🔲 CSS Basics</li>
@@ -42,20 +49,24 @@
         </ul>
       </section>
 
-      <!-- Column 2: Calendar -->
+      <!-- Column 2: Study Calendar Section -->
       <section class="calendar">
         <h3>Study Calendar</h3>
+        <!-- Weekly topics planned -->
         <p>Week 1: HTML</p>
         <p>Week 2: CSS</p>
         <p>Week 3: Layout</p>
         <p>Week 4: Media Queries</p>
       </section>
+
     </main>
 
-    <!-- Footer -->
+    <!-- Footer with course info -->
     <footer>
       <p>&copy; 2025 Creative Computing Course - Study Planner</p>
     </footer>
-  </div>
+
+  </div> <!-- End of main-content -->
+
 </body>
 </html>
