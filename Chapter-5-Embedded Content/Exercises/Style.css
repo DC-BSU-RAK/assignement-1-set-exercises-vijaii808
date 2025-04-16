@@ -1,0 +1,27 @@
+/* ===== Basic Page Setup ===== */
+body {
+    background-color: #ffee00c0; /* Semi-transparent yellow background */
+    margin: 0;                   /* Remove default browser margin */
+    padding: 0;                  /* Remove default browser padding */
+    font-family: Arial, sans-serif; /* Set font for the entire page */
+  }
+  
+  /* ===== Video Container Styling ===== */
+  .video-container {
+    display: flex;              /* Use flexbox layout */
+    justify-content: center;    /* Center the video horizontally */
+    align-items: center;        /* Center the video vertically (if parent allows) */
+    margin: 40px auto;          /* Add vertical margin and center horizontally */
+    padding: 10px;              /* Add space inside the container */
+  }
+  
+  /* ===== Video Styling ===== */
+  video {
+    width: 100%;                /* Make video responsive to container */
+    max-width: 1200px;          /* Limit video width on large screens */
+    height: auto;               /* Maintain aspect ratio */
+    border: 4px solid #000000b8; /* Add a semi-transparent black border */
+    border-radius: 10px;        /* Smooth rounded corners */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.96); /* White glow/shadow effect */
+  }
+  
