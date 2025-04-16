@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+}
+
+/* div#A: purple border, red drop shadow */
+#A {
+  border: 5px solid purple;
+  box-shadow: 15px 15px 20px red;
+}
+
+/* div#B: green border with black inset shadow */
+#B {
+  border: 5px solid lime;
+  box-shadow: inset 0 0 30px black;
+}
+
+/* div#C: multiple outlines with rounded corners */
+#C {
+  border: 5px solid orange;
+  outline: 10px solid blue;
+  outline-offset: -15px;
+  box-shadow:
+    0 0 0 25px red,
+    0 0 0 40px green;
+  border-radius: 30px;
+}
+
+/* div#D: maroon border, text shadow effect */
+#D {
+  border: 5px solid brown;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
