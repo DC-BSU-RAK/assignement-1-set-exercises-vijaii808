@@ -1,7 +1,7 @@
 /* Body and layout styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffd900;
     margin: 0;
     padding: 0;
   }
@@ -27,7 +27,7 @@ body {
   section {
     padding: 2em;
     margin: 1em;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 5px solid #000000;
   }
   
   h1, h2 {
