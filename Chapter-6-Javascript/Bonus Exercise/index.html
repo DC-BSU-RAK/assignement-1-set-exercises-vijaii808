@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RGB Color Guessing Game</title>
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main game wrapper -->
+  <div class="game-container">
+
+    <!-- Header section with game title and description -->
+    <header>
+      <h1>RGB Color Guessing Game</h1>
+      <p>Can you guess the correct color from its RGB value?</p>
+    </header>
+
+    <!-- Game status display: RGB value to guess, lives left, and score -->
+    <section class="status">
+      <!-- This will be updated dynamically with the RGB value -->
+      <h2 id="rgb-value">rgb(??, ??, ??)</h2>
+      <!-- Lives and score counters -->
+      <p>Lives: <span id="lives">3</span> | Score: <span id="score">0</span></p>
+    </section>
+
+    <!-- Buttons with different color options will be generated here via JavaScript -->
+    <section class="color-options" id="color-options">
+      <!-- Color buttons will be injected here -->
+    </section>
+
+    <!-- Message area for user feedback like “Correct!” or “Try again!” -->
+    <div class="message" id="message"></div>
+
+    <!-- Play again button, hidden by default, shown at end of game -->
+    <button id="play-again" class="hidden">Play Again</button>
+  </div>
+
+  <!-- Link to the JavaScript game logic -->
+  <script src="index.js"></script>
+</body>
+</html>

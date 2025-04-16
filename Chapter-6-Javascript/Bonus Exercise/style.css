@@ -1,0 +1,139 @@
+/* Reset and base layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  /* Game container with slight glow */
+  .game-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background: #111;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    border: 2px solid #1f1f1f;
+  }
+  
+  /* Header text styling */
+  header h1 {
+    font-size: 2.7rem;
+    margin-bottom: 8px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 20px;
+  }
+  
+  /* Status display */
+  .status h2 {
+    font-size: 2rem;
+    color: #39ff14;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #39ff14;
+  }
+  
+  .status p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Color buttons container */
+  .color-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Color buttons with glow effect */
+  .color-btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 14px;
+    border: 2px solid #444;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    outline: none;
+    animation: pulse 2s infinite;
+  }
+  
+  .color-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Glow animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+  }
+  
+  /* Feedback message */
+  #message {
+    font-size: 1.4rem;
+    height: 30px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffd700;
+  }
+  
+  /* Play again button */
+  #play-again {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #ff00ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 12px #ff00ff;
+  }
+  
+  #play-again:hover {
+    background: #cc00cc;
+    box-shadow: 0 0 20px #ff00ff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .color-btn {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
